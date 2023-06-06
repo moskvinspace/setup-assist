@@ -14,4 +14,4 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 docker --version
 docker-compose version
-echo Dont forget to reboot the server to make the docker command work without sudo (๑˘︶˘๑)
+echo Dont forget to reboot the server to make the docker command work without sudo
