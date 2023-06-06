@@ -1,8 +1,12 @@
 #!/bin/sh
 # docker-install.sh
 
-curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh
+set -e
+
+PACMAN="$1"
+
+$PACMAN update
+$PACMAN install docker
 service docker start
 usermod -a -G docker ec2-user
 chkconfig docker on
