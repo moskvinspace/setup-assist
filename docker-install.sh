@@ -6,7 +6,7 @@ set -e
 PACMAN="$1"
 
 $PACMAN update
-$PACMAN install docker
+$PACMAN install -y docker
 service docker start
 usermod -a -G docker ec2-user
 chkconfig docker on
