@@ -1,7 +1,6 @@
 ## Amazon Linux: install docker & docker-compose
 ```sh
-$PACMAN=yum
-sudo $PACMAN install -y git && /
+sudo yum install -y git && /
 git clone https://github.com/moskvinspace/setup-assist.git && /
 sudo chmod +x setup-assist/docker-install.sh && /
 sudo setup-assist/docker-install.sh
