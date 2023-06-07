@@ -1,0 +1,13 @@
+server:
+  http_listen_port: 3200
+
+storage:
+  trace:
+    backend: s3
+    s3:
+      bucket: tempo-storage
+      endpoint: s3.eu-west-2.amazonaws.com
+      region: eu-west-2
+      access_key: ${{ secrets.AWS_ACCESS_KEY}}
+      secret_key: ${{ secrets.AWS_SECRET_KEY}}
+      insecure: true
